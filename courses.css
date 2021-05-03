@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#80d1f7;
+}
+
+p {
+    display: block;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin: 0rem 0;
+}
+
+.best {
+    font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.right{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+.card-content .right p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: green;
+}
+
+.cards {
+    display: flex;
+    margin: 2rem auto;
+    border-radius: 22px;
+    width: 60%;
+    box-shadow: 0 0 10px 2px #888;
+    transition: 0.3s;
+    /* border: 1px solid #fff; */
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px 2px #888;
+}
+
+.card-content {
+    margin: auto;
+}
+
+
+.courses img {
+    margin: 0.5rem;
+    border-radius: 22px;
+    width: 200px;
+    height: 200px;
+}
+
+.courses p {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #111;
+    padding: 1rem;
+}
+
+.courses span {
+    display: inline-block;
+    font-size: 1rem;
+    color: #111;
+    padding: 1rem;
+}
+
+.block {
+    display: block;
+}
+.courses a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: green;
+    border-radius: 8px;
+    transition: 0.5s;
+}

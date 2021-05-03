@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC ation | A = AI B = Blockchain C = Cloud Computing</title>
+  <link rel="icon" href="./logo-removebg-preview-removebg-preview.png">
+  <link rel="stylesheet" href="./landingVideo.css">
+</head>
+
+<body>
+  <section class="showcase">
+    <header>
+      <img src="./logo-removebg-preview-removebg-preview.png" alt="logo" height="40px" width="40px">
+      <!-- <h2 class="logo">ABC <span class="lower-title">ation</span></h2> -->
+      <div class="toggle"></div>
+    </header>
+    <video id="video" src="./22105784.mp4" type="video/mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Learn With Us</h2>
+      <h3>Explore Tech With Experts</h3>
+      <p>ABC ation is your online teaching platform for learning modern IT technologies like Artificial Intellegence ,
+        Block Chain , & Cloud Computing </p>
+      <a href="">Get Courses</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="./fb-icon.png" height="40px" width="40px"></a></li>
+      <li><a href="#"><img src="./linkedin-icon.png" width="40px" height="40px"></a></li>
+      <li><a href="https:/www.iotsol.pk"><img src="./web-globe.png" width="40px" height="40px"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="./landingVideo.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./Courses.html">Courses</a></li>
+      <li><a href="./faculty.html">Faculty</a></li>
+      <li><a href="./contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <section class="relative">
+    <div class="courses">
+      <h2 class="courses-title">We offer you the <span class="best">Best Courses</span>for modern tech in IT Industry.</h2>
+      <div class="cards">
+        <img src="./ai-image.jpg" alt="">
+        <div class="card-content">
+          <p> Artificial Intellegence</p>
+          <span>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.</span>
+          <a href="">Enroll Now</a>
+        </div>
+      </div>
+      <div class="cards">
+        <img src="./blockchain-image.jpg" alt="">
+        <div class="card-content">
+          <p> Block Chain</p>
+          <span>A blockchain is a digital record of transactions. The name comes from its structure, in which individual records, called blocks, are linked together in single list, called a chain.</span>
+          <a href="">Enroll Now</a>
+        </div>
+      </div>
+      <div class="cards">
+        <img src="./cloudcomp-image.jpeg" alt="">
+        <div class="card-content">
+          <p> Cloud Computing</p>
+          <span>Cloud computing is the on-demand availability of computer system resources, especially data storage (cloud storage) and computing power, without direct active management by the user.</span>
+          <a href="">Enroll Now</a>
+        </div>
+      </div>
+      
+      <a class="more-courses" href="./about.html">See More Courses</a><br><hr>
+    </div>
+  </section>
+
+  <section class="relative">
+    <div class="banner-alumni">
+      <div class="sect">
+        <p>Where some of our 6000+ alumni work</p>
+        <a class="" href="#">Meet Our Alumni</a>
+      </div>
+      <div class="sect">
+        <div class="alumni-placements">
+          <div class="grid-item"><img src="./cisco.png" alt="" width="64px" height="64px"></div>
+          <div class="grid-item"><img src="./facebook.png" alt="" width="64px" height="64px"></div>
+          <div class="grid-item"><img src="./hp.png" alt="" width="64px" height="64px"></div>
+          <div class="grid-item"><img src="./icon-android.png" alt="" width="64px" height="64px"></div>
+          <div class="grid-item"><img src="./linkedin-icon.png" alt="" width="64px" height="64px"></div>
+          <div class="grid-item"><img src="./microsoft (2).png" alt="" width="64px" height="64px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })
+
+    document.querySelector('#video').playbackRate = 0.8;
+  </script>
+</body>
+
+</html>

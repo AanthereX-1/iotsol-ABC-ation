@@ -1,0 +1,362 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --primary-color:#80d1f7;
+}
+
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  color: #fff;
+  /* text-transform: uppercase; */
+  cursor: pointer;
+}
+header .lower-title{
+  text-transform: lowercase;
+}
+
+.toggle
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active
+{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active
+{
+  right: 300px;
+}
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right , rgba(0,0,0, 1) , rgba(128,209,247, 0.3));
+  mix-blend-mode: overlay;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover , .courses a:hover , .banner-alumni a:hover
+{
+  letter-spacing: 4px;
+}
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+.menu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul
+{
+  position: relative;
+}
+.menu ul li
+{
+  list-style: none;
+  padding: 1rem;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.menu ul li a:hover
+{
+  color: var(--primary-color); 
+}
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+}
+
+/* cards for courses  */
+
+.relative .courses{
+  z-index: 9999;
+  position: absolute;
+  top:100vh;
+}
+
+.courses .courses-title{
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  margin: 3rem;
+}
+
+.courses-title .best {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.cards{
+  display: flex;
+  margin: 2rem auto;
+  border-radius: 22px;
+  width: 60%;
+  box-shadow: 0 0 10px 2px  #888;
+  transition: 0.3s;
+  /* border: 1px solid #fff; */
+}
+
+.cards:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 5px 2px  #888;
+}
+
+.card-content{
+  margin: auto;
+}
+
+.courses img {
+  margin: 0.5rem;
+  border-radius: 22px;
+  width: 200px;
+  height: 200px;
+  }
+
+.courses p {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #111;
+  padding: 1rem;
+}
+
+.courses span {
+  display: inline-block;
+  font-size: 1rem;
+  color: #111;
+  padding: 1rem;
+}
+
+.courses a{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 30px;
+  background-color: green;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.courses .more-courses{
+  display: inline-block;
+  font-size: 0.9rem;
+  border: 1px solid green;
+  background-color: #fff;
+  color: #111;
+  margin: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* alumni section */
+.relative {
+  position: relative;
+}
+
+
+.relative .banner-alumni{
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  z-index: 9999;
+  top: 1720px;
+}
+
+.banner-alumni p{
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  min-width: 4rem;
+}
+
+.banner-alumni a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  background-color:green;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  padding: 0.6rem;
+  color: #fff;
+  margin: 1rem 0;
+  transition: 0.5s;
+}
+
+.banner-alumni a:hover {
+  background-color:rgb(224, 224, 224);
+  border: 1px solid green;
+  font-weight: 600;
+  color: green;
+}
+
+.alumni-placements{  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
